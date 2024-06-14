@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario </title>
+    <link rel="stylesheet" href="estilos.css" id="estilos">
+    <link rel="stylesheet" href="estilos-contraste.css" id="estilos-contraste" disabled>
+</head>
+<body>
+    <h1 class="Titulo">Formulario de Datos Personales</h1>
+
+
+    <form action="#" method="post">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        
+        <div>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+        </div>
+        
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <span id="email-validation-message" style="display: none;">Ingrese un correo electrónico válido.</span>
+        </div>
+        
+        <div>
+            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+        </div>
+        
+        <div>
+            <label for="pais_residencia">País de Residencia:</label>
+            <select id="pais_residencia" name="pais_residencia" required>
+                <option value="">Seleccionar País</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Paraguay">Chile</option>
+                <option value="Bolivia">Chile</option>
+                <option value="Peru">Chile</option>
+                <option value="Colombia">Chile</option>
+                </select>
+        </div>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <div class="style-buttons">
+        <button class="style-button" onclick="cambiarEstilo('estilos.css')">Estilo 1</button>
+        <button class="style-button" onclick="cambiarEstilo('estilos-contraste.css')">Alto Contraste</button>
+    </div>
+
+    <script src="validacion.js"></script>
+</body>
+</html>
+
+
+
