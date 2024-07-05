@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario </title>
+    <title>Formulario</title>
     <link rel="stylesheet" href="estilos.css" id="estilos">
     <link rel="stylesheet" href="estilos-contraste.css" id="estilos-contraste" disabled>
 </head>
 <body>
     <h1 class="Titulo">Formulario de Datos Personales</h1>
-
 
     <form action="#" method="post">
         <div>
@@ -34,16 +33,21 @@
         </div>
         
         <div>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+        </div>
+        
+        <div>
             <label for="pais_residencia">País de Residencia:</label>
             <select id="pais_residencia" name="pais_residencia" required>
                 <option value="">Seleccionar País</option>
                 <option value="Argentina">Argentina</option>
                 <option value="Brasil">Brasil</option>
-                <option value="Paraguay">Chile</option>
-                <option value="Bolivia">Chile</option>
-                <option value="Peru">Chile</option>
-                <option value="Colombia">Chile</option>
-                </select>
+                <option value="Chile">Chile</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Peru">Perú</option>
+                <option value="Colombia">Colombia</option>
+            </select>
         </div>
 
         <button type="submit">Enviar</button>
@@ -57,6 +61,3 @@
     <script src="validacion.js"></script>
 </body>
 </html>
-
-
-

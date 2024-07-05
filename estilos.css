@@ -1,4 +1,4 @@
-.Titulo{
+.Titulo {
     text-align: center;
     color: #000000;
 }
@@ -55,17 +55,19 @@ button[type="submit"] {
     border-radius: 4px;
     cursor: pointer;
     display: block;
+    margin-top: 10px; /* Ajuste de margen superior */
+    transition: background-color 0.3s ease; /* Transición suave */
 }
 
 button[type="submit"]:hover {
-    background-color:  #00fff2;
-    
+    background-color: #00fff2;
 }
 
 .style-buttons {
     text-align: center;
     margin-top: 20px;
 }
+
 .style-button {
     margin: 5px auto; 
     padding: 8px 16px;
@@ -73,11 +75,11 @@ button[type="submit"]:hover {
     border-radius: 4px;
     background-color: #808080;
     cursor: pointer;
-    display: block; 
-
-.style-button:hover {
-    background-color: #ff00ff; 
+    display: inline-block; /* Alineación en línea */
+    transition: background-color 0.3s ease; /* Transición suave */
 }
 
+.style-button:hover {
+    background-color: #ff00ff;
 }
 
