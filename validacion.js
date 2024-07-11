@@ -1,22 +1,12 @@
-function cambiarEstilo(archivoEstilo) {
-    var estilos = document.getElementById('estilos');
-    var estilosContraste = document.getElementById('estilos-contraste');
-    if (archivoEstilo === 'estilos.css') {
-        estilos.disabled = false;
-        estilosContraste.disabled = true;
+function cambiarEstilo(nombreEstilo) {
+    var estiloNormal = document.getElementById('estilos');
+    var estiloContraste = document.getElementById('estilos-contraste');
+
+    if (nombreEstilo === 'estilos-contraste.css') {
+        estiloNormal.disabled = true;  // Desactiva los estilos normales
+        estiloContraste.disabled = false;  // Activa los estilos de alto contraste
     } else {
-        estilos.disabled = true;
-        estilosContraste.disabled = false;
+        estiloNormal.disabled = false;  // Activa los estilos normales
+        estiloContraste.disabled = true;  // Desactiva los estilos de alto contraste
     }
 }
-
-var emailInput = document.getElementById('email');
-var emailValidationMessage = document.getElementById('email-validation-message');
-
-emailInput.addEventListener('input', function(event) {
-    if (!emailInput.validity.valid) {
-        emailValidationMessage.style.display = 'block';
-    } else {
-        emailValidationMessage.style.display = 'none';
-    }
-});
